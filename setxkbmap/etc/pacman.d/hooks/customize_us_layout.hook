@@ -1,0 +1,11 @@
+[Trigger]
+Operation = Install
+Operation = Upgrade
+Type = Package
+Target = xkeyboard-config
+
+[Action]
+Description = Customize us keyboard layout
+Exec = /usr/local/bin/customize_layout.sh /usr/share/X11/xkb/symbols/us
+When = PostTransaction
+Depends = xkeyboard-config

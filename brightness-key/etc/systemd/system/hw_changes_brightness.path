@@ -1,0 +1,8 @@
+[Unit]
+Description=Watch for, and modify, hw_changes_brightness
+
+[Path]
+PathExists=/sys/module/video/parameters/hw_changes_brightness
+
+[Install]
+WantedBy=default.target
